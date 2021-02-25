@@ -49,6 +49,31 @@ h2 {
   transition: 0.3s ease all;
 }
 
+.buttons .stopButton{
+background-color: tomato;
+color: white;
+}
+
+.buttons .resetButton{
+  background-color: steelblue;
+  color: white;
+  }
+
+  
+.buttons .resetButton:hover {
+  border-radius: 10px;
+  background: rgb(79, 127, 167);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.buttons .stopButton:hover {
+  border-radius: 10px;
+  background: rgb(197, 97, 79);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
 .buttons button:hover {
   border-radius: 10px;
   background: #f5f8ca;
