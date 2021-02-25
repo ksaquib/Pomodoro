@@ -33,7 +33,7 @@ h2 {
 .timer {
   color: #1f6e72;
   font-size: 150px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .buttons button {
@@ -84,7 +84,13 @@ color: white;
 .buttons button:not(:last-child) {
   margin-right: 10px;
 }
-
+.progressDiv {
+  height: 27px;
+  margin-bottom: 5%;
+  background-color: #2d6e2d91;
+  border-radius: 6px;
+  color: whitesmoke;
+}
 @media (max-width: 780px) {
   h2 {
     font-size: 22px;

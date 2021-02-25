@@ -44,15 +44,28 @@ export default function App() {
   };
   const minutes = padTime(Math.floor(timeLeft / 60));
   const seconds = padTime(timeLeft - minutes * 60);
+  const progress = ((25 * 60 - timeLeft) / (25 * 60)) * 100;
 
   return (
     <div className="app">
       <h2>{title}</h2>
 
-      <div className="timer">
-        <span>{minutes}</span>
-        <span>:</span>
-        <span>{seconds}</span>
+      <div>
+        <div className="timer">
+          <span>{minutes}</span>
+          <span>:</span>
+          <span>{seconds}</span>
+        </div>
+        {isRunning && (
+          <>
+            <div
+              className="progressDiv"
+              style={{ width: progress + "%", paddingLeft: progress - 7 + "%" }}
+            >
+              {Math.round(progress) + "%"}
+            </div>
+          </>
+        )}
       </div>
 
       <div className="buttons">
